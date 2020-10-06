@@ -1,6 +1,8 @@
 package Collection;
 
 import java.util.ArrayList;
+import java.util.SortedMap;
+import java.util.TreeSet;
 
 public class TestCollection01 {
     public static void main(String[] args) {
@@ -56,6 +58,18 @@ public class TestCollection01 {
 
         /*Collections.sort(worldList);
         displayList(worldList);*/
+
+        TreeSet<String> treeSet = new TreeSet<String>();
+        treeSet.add("Spain");
+        treeSet.add("Russia");
+        treeSet.add("Germany");
+        treeSet.add("Austria");
+        treeSet.add("Belgium");
+        treeSet.add("France");
+        treeSet.add("France");
+        for(String k : treeSet)
+            System.out.printf("%s ", k);
+        System.out.println();
 
     }
     public static void displayList(ArrayList<String> arrayList){
