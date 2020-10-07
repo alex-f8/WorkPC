@@ -25,12 +25,13 @@ public class TestCollectionTreeMap {
         print(cCode);
 
         TreeMap<String, String> countryCode = new TreeMap<String, String>();
-        String path = "C:\\LAB\\java_code\\PROJECTS\\workPC\\src\\main\\resources\\";
+        String path1 = "C:\\LAB\\java_code\\PROJECTS\\workPC\\src\\main\\resources\\";
+        String path2 = "C:\\PROJECT_FOLDER\\labs\\Study\\src\\main\\resources\\";
         String filename = "countrycode.txt";
         String tmp = null;
         String[] tmpArr = null;
         try {
-            FileReader fileReader = new FileReader(path + filename);
+            FileReader fileReader = new FileReader(path2 + filename);
             Scanner scanner = new Scanner(fileReader);
             while(scanner.hasNextLine()){
                 tmpArr = scanner.nextLine().split("\t");
