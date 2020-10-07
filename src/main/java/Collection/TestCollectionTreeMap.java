@@ -38,7 +38,7 @@ public class TestCollectionTreeMap {
         String tmp = null;
         String[] tmpArr = null;
         try {
-            FileReader fileReader = new FileReader(path2 + filename);
+            FileReader fileReader = new FileReader(path1 + filename);
             Scanner scanner = new Scanner(fileReader);
             while(scanner.hasNextLine()){
                 tmpArr = scanner.nextLine().split("\t");
