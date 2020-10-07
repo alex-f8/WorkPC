@@ -1,6 +1,7 @@
 package IO;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class TestIO {
     public static void main(String ...args) throws IOException {
@@ -39,6 +40,20 @@ public class TestIO {
         }
         catch (IOException e){
             System.out.println(e.getMessage());
+        }
+
+
+
+        FileReader fr = new FileReader(path + filename1);
+        Scanner scanner = new Scanner(fr);
+
+        FileWriter  fw = new FileWriter(path + filename1, true);
+        BufferedWriter bw = new BufferedWriter(fw);
+
+        String str;
+        while( !(str = scanner.nextLine()).equals("ESC") ){
+            bw.write(str);
+            bw.flush();
         }
 
     }
