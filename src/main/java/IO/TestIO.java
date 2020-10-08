@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class TestIO {
     public static void main(String ...args) throws IOException {
-        String path = "C:\\LAB\\java_code\\PROJECTS\\workPC\\src\\main\\resources\\";
+        //String path = "C:\\LAB\\java_code\\PROJECTS\\workPC\\src\\main\\resources\\";
+        String path = "C:\\PROJECT_FOLDER\\labs\\Study\\src\\main\\resources\\";
         String filename1 = "test.txt";
         String filename2 = "test2.txt";
         File file1 = new File(path, filename1);
@@ -44,17 +45,26 @@ public class TestIO {
 
 
 
-        FileReader fr = new FileReader(path + filename1);
-        Scanner scanner = new Scanner(fr);
+
+        Scanner scanner = new Scanner(System.in);
 
         FileWriter  fw = new FileWriter(path + filename1, true);
         BufferedWriter bw = new BufferedWriter(fw);
 
-        String str;
+        String str = "";
         while( !(str = scanner.nextLine()).equals("ESC") ){
             bw.write(str);
+            bw.append('\n');
             bw.flush();
         }
+        scanner.close();
+
+        FileReader fr = new FileReader(path + filename1);
+        scanner = new Scanner(fr);
+        System.out.println("\nfile output:\n");
+        while(scanner.hasNext())
+            System.out.println(scanner.nextLine());
+
 
     }
 }
