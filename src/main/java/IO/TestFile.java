@@ -4,10 +4,9 @@ package IO;
 import java.io.*;
 import java.util.Scanner;
 
-public class TestSerializable {
+public class TestFile {
     public static void main(String[] args) throws IOException {
         String strTmp;
-        Person person = new Person("Bob", 15);
         /*
                 create directory c:\tmpDel
                 create file: test.txt and write into "hello"
@@ -96,14 +95,3 @@ public class TestSerializable {
     }
 }
 
-class Person{
-    private String name;
-    private int age;
-    Person(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-    public void displayInfo(){
-        System.out.printf("%s %d\n", name, age);
-    }
-}
