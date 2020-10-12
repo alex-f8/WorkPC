@@ -28,6 +28,6 @@ public class TestBuilderBuffer {
         System.out.println(sBuffer.delete(sBuffer.length()-1,sBuffer.length()));
         System.out.println(sBuffer);
         System.out.println(sBuffer.reverse());
-        System.out.println(sBuffer.);
+        System.out.println(sBuffer);
     }
 }
