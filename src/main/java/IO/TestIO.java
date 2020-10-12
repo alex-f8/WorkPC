@@ -7,7 +7,7 @@ public class TestIO {
     public static void main(String ...args) throws IOException {
         //String path = "C:\\LAB\\java_code\\PROJECTS\\workPC\\src\\main\\resources\\";
         String path = "C:\\PROJECT_FOLDER\\labs\\Study\\src\\main\\resources\\";
-        String filename1 = "test.txt";
+        String filename1 = "io/test.txt";
         String filename2 = "test2.txt";
         File file1 = new File(path, filename1);
         file1.createNewFile();

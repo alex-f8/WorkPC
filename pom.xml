@@ -29,14 +29,15 @@
 
   <build>
 
-<!--
     <resources>
       <resource>
-        <directory>${basedir}/src/main/resources</directory>
-
+        <directory>/src/main/resources/io</directory>
+        <includes>
+          <include>test.txt</include>
+          <include>person.dat</include>
+        </includes>
       </resource>
     </resources>
--->
 
 
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
