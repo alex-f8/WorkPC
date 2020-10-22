@@ -27,7 +27,7 @@ public class TestThread1 {
             threads[i].interrupt();
 
 
-        System.out.println("\n\n ------------------------------------------ \n");
+        System.out.println(" ------------------------------------------ ");
 
 
         // Xoroshay zadacha na prioriteti ! ! !
@@ -55,6 +55,17 @@ public class TestThread1 {
     }
 }
 
+
+
+
+class Potok3 extends Thread{
+    Potok3(String name){
+        super(name);
+    }
+    public void run(){
+
+    }
+}
 
 
 class Potok implements Runnable{
